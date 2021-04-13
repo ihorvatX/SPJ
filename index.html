@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Github</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <label for="subject">Predemet</label>
+        <input id="subject" type="text">
+
+        <br>
+        <label for="year">Godina</label>
+        <input id="year" type="number">
+
+        <br>
+
+        <label for="ects">Broj ECTS</label>
+        <input id="ects" type="number">
+
+        <br>
+        <button id="save" onclick="SaveToTable()">Spremi</button>
+
+        
+<br><br>
+
+<div class="SearchInput">
+  <input type="text" id="myInput" onkeyup="Search()" placeholder="Search for names.." title="Type in a name">
+
+</div>
+
+
+        <table id="table">
+            <tr>
+              <th>Predemt</th>
+              <th>Godina</th>
+              <th>Broj ects</th>
+              <th>Brisanje</th>
+              <th>Check</th>
+            </tr>
+            
+          </table>
+
+          <script src="js/app.js"></script>
+    </body>
+</html>
