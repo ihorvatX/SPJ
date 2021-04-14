@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kompleksni brojevi</title>
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
+            
+            .form-inline label {
+              margin: 5px 10px 5px 0;
+            }
+            
+            .form-inline input {
+              vertical-align: middle;
+              margin: 5px 10px 5px 0;
+              padding: 10px;
+              background-color: #fff;
+              border: 1px solid #ddd;
+            }
+            .form-inline select {
+              vertical-align: middle;
+              margin: 5px 10px 5px 40px;
+              padding: 10px;
+              background-color: #fff;
+              border: 1px solid #ddd;
+            }
+            
+            .form-inline button {
+              padding: 10px 20px;
+              background-color: dodgerblue;
+              border: 1px solid #ddd;
+              color: white;
+              cursor: pointer;
+            }
+            
+            .form-inline button:hover {
+              background-color: royalblue;
+            }
+            
+            @media (max-width: 800px) {
+              .form-inline input {
+                margin: 10px 0;
+              }
+              
+           
+            }
+            </style>
+    </head>
+
+    <body>
+
+        <div class="form-inline">
+        <div>
+            <label for="z1">Z1:</label>
+            <input type="number" id="z1Real" placeholder="Realni dio" name="z1">
+            <input type="number" id="z1Imag" placeholder="Imaginarni dio" name="z1">
+        </div>
+        <div>
+            <label for="z2">Z2:</label>
+            <input type="number" id="z2Real" placeholder="Realni dio" name="z2">
+            <input type="number" id="z2Imag" placeholder="Imaginarni dio" name="z2">
+        </div>
+        <br>
+        <br>
+        <div>
+            <select  id="operacije" onclick="Izracunaj()">
+                <option selected>Odaberi operaciju</option>
+                <option value="zbrajanje">Zbrajanje</option>
+                <option value="mnozenje">Mnozenje</option>
+              
+              </select>
+
+              <!-- <button type="submit" onclick="Izracunaj()">Izracunaj</button> -->
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="z3">Z3:</label>
+            <input type="number"  id="z3Real" placeholder="Realni dio" name="z3">
+            <input type="number"  id="z3Imag" placeholder="Imaginarni dio" name="z3">
+        </div>
+        <div>
+           
+        </div>
+          </div>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <script src="./app.js"></script>
+          
+    </body>
+</html>

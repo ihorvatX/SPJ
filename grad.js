@@ -54,4 +54,4 @@ function dajUdaljenost(grad1, grad2)
 
 console.log(oBjelovar.dajVelicinuGrada())
 
-console.log(dajUdaljenost(oVirovitica,oSlatina));
+console.log(dajUdaljenost(oVirovitica,oZagreb));
