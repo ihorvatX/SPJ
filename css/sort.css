@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+   
+    font-size: 50px;
+    font-weight: normal;
+  }
+
+  ul {
+    padding: 0px;
+  }
+   .draggable {
+      font-weight: 800;
+      height: 50px;
+      list-style-type: none;
+      margin: 10px;
+      background-color: white;
+      width: 250px;
+      line-height: 3.2;
+      padding-left: 10px;
+      cursor: move;
+      transition: all 200ms;
+      user-select: none;
+      margin: 10px auto;
+      position: relative;
+   }
+      .draggable:after {
+        /* content: 'drag me'; */
+        right: 7px;
+        font-size: 10px;
+        position: absolute;
+        cursor: pointer;
+        line-height: 5;
+        transition: all 200ms;
+        transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.50);
+        transform: translateX(120%);
+        opacity: 0;
+      }
+      .draggable:hover:after {
+         
+          opacity: 1;
+          transform: translate(0);
+        }
+
+
+.over {
+    transform: scale(1.1, 1.1);
+  }
+
+/* https://codepen.io/gabrielferreira/pen/jMgaLe */

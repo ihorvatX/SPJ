@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+        <input type="number" id="iznos" > 
+        <select id="iz">
+            <option selected>Kuna</option>
+            <option>Euro</option>
+            <option>Dolar</option>
+            <option>Funta</option>
+            <option>Dinar</option>
+        </select>
+    </div>
+    <div>
+        <input readonly type="number" id="rezultat"> 
+        <select id="u">
+            <option selected>Kuna</option>
+            <option>Euro</option>
+            <option>Dolar</option>
+            <option>Funta</option>
+            <option>Dinar</option>
+        </select>
+    </div>
+    <button onclick="calculation()">Pretvori</button>
+</div>
+
+<script src="/js/konverter.js"></script>
+</body>
+</html>
