@@ -1,49 +1,31 @@
-h1{
-    text-align: center;
-   
-    font-size: 50px;
-    font-weight: normal;
-  }
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+}
 
-  ul {
-    padding: 0px;
-  }
-   .draggable {
-      font-weight: 800;
-      height: 50px;
-      list-style-type: none;
-      margin: 10px;
-      background-color: white;
-      width: 250px;
-      line-height: 3.2;
-      padding-left: 10px;
-      cursor: move;
-      transition: all 200ms;
-      user-select: none;
-      margin: 10px auto;
-      position: relative;
-   }
-      .draggable:after {
-        /* content: 'drag me'; */
-        right: 7px;
-        font-size: 10px;
-        position: absolute;
-        cursor: pointer;
-        line-height: 5;
-        transition: all 200ms;
-        transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.50);
-        transform: translateX(120%);
-        opacity: 0;
-      }
-      .draggable:hover:after {
-         
-          opacity: 1;
-          transform: translate(0);
-        }
+#sortable li {
+  margin: 0 3px 3px 3px;
+  padding: 0.4em;
+  padding-left: 1.5em;
+  font-size: 1.4em;
+  height: 18px;
+}
 
+#sortable li span {
+  position: absolute;
+  margin-left: -1.3em;
+}
 
-.over {
-    transform: scale(1.1, 1.1);
-  }
+li{
+  cursor: pointer;
+}
 
-/* https://codepen.io/gabrielferreira/pen/jMgaLe */
+.center{
+  margin: 0 auto;
+	width: 450px;
+	/* background-color: #e2e2e2; */
+	padding: 25px 35px;
+	text-align: center;
+}
