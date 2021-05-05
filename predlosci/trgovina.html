@@ -1,0 +1,35 @@
+
+
+<ul>
+    <li ng-repeat="proizvod in oProizvodi">
+        {{proizvod.ime}} 
+        {{proizvod.cijena}} 
+        {{proizvod.dostupnaKolicina}} 
+        <button ng-click="AddToCart(proizvod)">Dodaj</button>
+    </li>
+</ul>
+
+<br>
+<br>
+<br>
+
+<p>Košarica</p>
+
+<ul>
+    <li ng-repeat="kosara in Kosarica">
+        {{kosara.cart_ime}} 
+        {{kosara.cijena}} 
+        {{kosara.cart_kolicina}} 
+        {{kosara.message}}
+        <input type="number" ng-model="kosara.cart_kolicina" />
+        <button ng-click="Kolicina(kosara)">Unesi Kolicinu</button>
+    </li>
+
+    <button ng-click="Izracunaj()">Izracunaj</button>
+</ul>
+
+
+<p>Ukupna cijena</p>
+<div>
+    {{UkupnaCijena}}
+</div>

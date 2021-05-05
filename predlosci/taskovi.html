@@ -1,0 +1,12 @@
+
+<p>Unesite zadatak:</p>
+<input type="text" ng-model="task" />
+<button ng-click="AddTask()">Unesi</button> 
+
+
+<ul>
+    <li ng-repeat="zadatak in oZadaci">
+        {{zadatak.name}} <button ng-click="DeleteTask($index)">Obrisi</button>
+    </li>
+</ul>
+
